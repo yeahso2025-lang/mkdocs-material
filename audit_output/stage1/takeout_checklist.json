@@ -1,0 +1,66 @@
+{
+  "yeahso_network": true,
+  "scout_device": true,
+  "audit_module": "takeout_checklist",
+  "version": "1.0",
+  "timestamp": "2026-03-31T10:37:26Z",
+  "export_format": "zip",
+  "max_split_size_gb": 2,
+  "usb_lifeboat_compatible": true,
+  "products": [
+    {
+      "name": "Gemini",
+      "product_id": "gemini",
+      "priority": 1,
+      "status": "pending",
+      "takeout_url": "https://takeout.google.com",
+      "notes": "Export all Gemini conversation history and saved prompts",
+      "estimated_size": "varies"
+    },
+    {
+      "name": "NotebookLM",
+      "product_id": "notebooklm",
+      "priority": 2,
+      "status": "pending",
+      "takeout_url": "https://takeout.google.com",
+      "notes": "Export all notebooks, sources, and generated summaries",
+      "estimated_size": "varies"
+    },
+    {
+      "name": "Chrome",
+      "product_id": "chrome",
+      "priority": 3,
+      "status": "pending",
+      "takeout_url": "https://takeout.google.com",
+      "notes": "Export bookmarks, history, passwords, autofill, extensions list",
+      "estimated_size": "varies"
+    },
+    {
+      "name": "Google Keep",
+      "product_id": "google_keep",
+      "priority": 4,
+      "status": "pending",
+      "takeout_url": "https://takeout.google.com",
+      "notes": "Export all notes, labels, images, audio recordings",
+      "estimated_size": "varies"
+    },
+    {
+      "name": "Google Drive",
+      "product_id": "google_drive",
+      "priority": 5,
+      "status": "pending",
+      "takeout_url": "https://takeout.google.com",
+      "notes": "Export all files; use 2GB zip splits for USB compatibility",
+      "estimated_size": "varies"
+    }
+  ],
+  "instructions": [
+    "1. Go to https://takeout.google.com on the Scout device",
+    "2. Deselect all products, then select only the target products above",
+    "3. Choose export format: .zip, max 2GB per file",
+    "4. Choose delivery method: Download link (do NOT use Drive or email)",
+    "5. Download each export to ~/yeahso_audit_staging/takeout/",
+    "6. Verify checksums before USB transfer to Mothership",
+    "7. DGANY manually enters credentials — no stored passwords"
+  ]
+}

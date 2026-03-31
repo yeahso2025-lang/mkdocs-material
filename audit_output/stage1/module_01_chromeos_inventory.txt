@@ -1,0 +1,65 @@
+═══════════════════════════════════════════════════════════════════════════════
+  YeahSo Network — Scout Satellite ChromeOS Baseline Audit Report
+  Stage 1 of 4: ChromeOS Inventory
+═══════════════════════════════════════════════════════════════════════════════
+
+  Generated : 2026-03-31T10:37:26Z
+  Hostname  : vm
+  Module    : chromeos_inventory v1.0
+
+───────────────────────────────────────────────────────────────────────────────
+  1. ChromeOS System
+───────────────────────────────────────────────────────────────────────────────
+  Version       : unknown
+  Channel       : unknown
+  Device Model  : unknown
+  CPU           : Intel(R) Xeon(R) Processor @ 2.10GHz
+  RAM           : 15.7 GB
+  Local Storage : 252 GB
+  GDrive Storage: 0
+0 GB
+  Android       : false
+  Crostini      : true
+
+───────────────────────────────────────────────────────────────────────────────
+  2. Google Ecosystem
+───────────────────────────────────────────────────────────────────────────────
+  Accounts      : []
+  Extensions    : 0 found
+  Chrome Apps   : 0 found
+  Android Apps  : 0 found
+  GDrive Usage  : 0 GB
+
+───────────────────────────────────────────────────────────────────────────────
+  3. Crostini Linux Container
+───────────────────────────────────────────────────────────────────────────────
+  Debian Version: trixie/sid
+  Packages      : 686 installed
+  Services      : 0 running
+  Docker        : true
+  Disk Used     : 8 GB
+
+───────────────────────────────────────────────────────────────────────────────
+  4. Takeout Export Checklist
+───────────────────────────────────────────────────────────────────────────────
+  Priority 1: Gemini          [PENDING]
+  Priority 2: NotebookLM      [PENDING]
+  Priority 3: Chrome           [PENDING]
+  Priority 4: Google Keep      [PENDING]
+  Priority 5: Google Drive     [PENDING]
+
+  Format: .zip, 2GB max splits, USB Lifeboat compatible
+
+───────────────────────────────────────────────────────────────────────────────
+  5. Errors
+───────────────────────────────────────────────────────────────────────────────
+[2026-03-31T10:37:26Z] ERROR: chromeos-version — command failed: cat /etc/chromeos-version — cat: /etc/chromeos-version: No such file or directory
+[2026-03-31T10:37:26Z] ERROR: ChromeOS version not found via lsb-release; using fallback
+[2026-03-31T10:37:26Z] ERROR: device-model — command failed: cat /sys/devices/virtual/dmi/id/product_name — cat: /sys/devices/virtual/dmi/id/product_name: No such file or directory
+[2026-03-31T10:37:26Z] ERROR: device-model-alt — command failed: cat /sys/class/dmi/id/product_name — cat: /sys/class/dmi/id/product_name: No such file or directory
+[2026-03-31T10:37:26Z] ERROR: Chrome extensions directory not accessible from Crostini
+[2026-03-31T10:37:26Z] ERROR: ADB not available — skipping Android app listing
+
+═══════════════════════════════════════════════════════════════════════════════
+  End of Stage 1 Report — Transfer via Lifeboat USB to Mothership
+═══════════════════════════════════════════════════════════════════════════════

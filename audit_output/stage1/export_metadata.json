@@ -1,0 +1,15 @@
+{
+  "yeahso_network": true,
+  "scout_device": true,
+  "export_type": "satellite_audit_stage1",
+  "export_timestamp": "20260331T103733Z",
+  "hostname": "vm",
+  "file_count": 5,
+  "transfer_method": "usb_lifeboat",
+  "destination": "mothership_mailroom",
+  "pipeline": "francesca_knowledge_base",
+  "stage": "1 of 4",
+  "stages_remaining": ["stage2_browser_data", "stage3_research_files", "stage4_android_data"],
+  "air_gap_verified": true,
+  "notes": "Packaged by satellite_export.sh — verify checksums on Mothership before Mailroom ingestion"
+}
