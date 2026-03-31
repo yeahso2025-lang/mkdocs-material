@@ -1,0 +1,69 @@
+═══════════════════════════════════════════════════════════════════════════════
+  YeahSo Network — Francesca Knowledge Base · Scout Device Profile
+═══════════════════════════════════════════════════════════════════════════════
+
+  Generated   : 2026-03-31T13:05:01Z
+  Source Batch: batch_20260331T130446Z
+  KB Version  : 1.0
+
+───────────────────────────────────────────────────────────────────────────────
+  DEVICE OVERVIEW
+───────────────────────────────────────────────────────────────────────────────
+  Role        : Scout Satellite
+  ChromeOS    : 1.0 (unknown)
+  Model       : unknown
+  CPU         : Intel(R) Xeon(R) Processor @ 2.10GHz
+  RAM         : 15.7 GB
+  Storage     : 252 GB local
+  Crostini    : Debian trixie/sid (686 pkgs, 14 dev tools)
+  Docker      : true
+  Android     : detected=false, ver=unknown, apps=0 user/0 system
+
+───────────────────────────────────────────────────────────────────────────────
+  BROWSER PROFILE
+───────────────────────────────────────────────────────────────────────────────
+  Browser     : unknown
+  Bookmarks   : 0
+  History     : 0 entries
+  Credentials : 0 domains
+  Autofill    : 0 entries
+  Cookies     : 0
+  Search      : unknown
+  Sync        : unknown
+
+───────────────────────────────────────────────────────────────────────────────
+  DIGITAL ASSETS
+───────────────────────────────────────────────────────────────────────────────
+  Documents     : 0
+  Data files    : 0
+  Presentations : 0
+  Code projects : 0
+  Images        : 0
+  Audio         : 0
+  Video         : 0
+  Archives      : 0
+  Home dir size : 2.0 GB
+
+───────────────────────────────────────────────────────────────────────────────
+  GAP ANALYSIS — 7 items need attention
+───────────────────────────────────────────────────────────────────────────────
+  device_model  [medium ] Device model not detected — DMI not accessible
+  bookmarks  [medium ] No bookmarks found — Chrome profile may not be accessible from Crostini
+  history  [medium ] No history found — need sqlite3 and Chrome profile access
+  saved_passwords  [low ] No saved passwords metadata — may require direct Chrome access
+  android_subsystem  [medium ] Android/ARC++ not detected — enable Play Store or install ADB
+  documents  [high ] No documents found — check if user files are on GDrive or shared paths
+  code_projects  [low ] No git repos found in scanned directories
+
+───────────────────────────────────────────────────────────────────────────────
+  NEXT ACTIONS
+───────────────────────────────────────────────────────────────────────────────
+  ACT-001 [P1] Re-run audit on physical Scout Chromebook
+  ACT-002 [P2] Execute Google Takeout exports
+  ACT-003 [P3] Install sqlite3 in Crostini
+  ACT-004 [P4] Lifeboat USB transfer to Mothership
+  ACT-005 [P5] Francesca initial context load
+
+═══════════════════════════════════════════════════════════════════════════════
+  End of Francesca Knowledge Base — Scout Device Profile
+═══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,11 @@
+{
+  "yeahso_network": true,
+  "mothership": true,
+  "knowledge_base": "francesca",
+  "manifest_type": "gap_analysis",
+  "version": "1.0",
+  "generated": "2026-03-31T13:05:01Z",
+  "source_batch": "batch_20260331T130446Z",
+  "total_gaps": 7,
+  "gaps": [{"module":"chromeos_inventory","field":"device_model","severity":"medium","note":"Device model not detected — DMI not accessible"},{"module":"browser_data","field":"bookmarks","severity":"medium","note":"No bookmarks found — Chrome profile may not be accessible from Crostini"},{"module":"browser_data","field":"history","severity":"medium","note":"No history found — need sqlite3 and Chrome profile access"},{"module":"browser_data","field":"saved_passwords","severity":"low","note":"No saved passwords metadata — may require direct Chrome access"},{"module":"android_data","field":"android_subsystem","severity":"medium","note":"Android/ARC++ not detected — enable Play Store or install ADB"},{"module":"research_files","field":"documents","severity":"high","note":"No documents found — check if user files are on GDrive or shared paths"},{"module":"research_files","field":"code_projects","severity":"low","note":"No git repos found in scanned directories"}]
+}

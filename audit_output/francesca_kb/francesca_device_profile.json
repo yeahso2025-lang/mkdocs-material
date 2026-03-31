@@ -1,0 +1,61 @@
+{
+  "yeahso_network": true,
+  "mothership": true,
+  "knowledge_base": "francesca",
+  "manifest_type": "consolidated_device_profile",
+  "version": "1.0",
+  "generated": "2026-03-31T13:05:01Z",
+  "source_batch": "batch_20260331T130446Z",
+  "device": {
+    "role": "scout_satellite",
+    "hostname": "vm",
+    "chromeos_version": "1.0",
+    "chromeos_channel": "unknown",
+    "model": "unknown",
+    "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "ram_gb": 15.7,
+    "storage_local_gb": 252,
+    "crostini": {
+      "debian_version": "trixie/sid",
+      "packages_installed": 686,
+      "dev_tools_available": 14,
+      "docker": true
+    },
+    "android": {
+      "detected": false,
+      "version": "unknown",
+      "user_apps": 0,
+      "system_apps": 0,
+      "runtime_permissions": 0,
+      "accounts": 0,
+      "services_running": 0
+    },
+    "browser": {
+      "name": "unknown",
+      "bookmarks": 0,
+      "history_entries": 0,
+      "saved_credentials": 0,
+      "autofill_entries": 0,
+      "cookies": 0,
+      "default_search": "unknown",
+      "sync_enabled": "unknown"
+    }
+  },
+  "digital_assets": {
+    "documents": 0,
+    "data_files": 0,
+    "presentations": 0,
+    "code_projects": 0,
+    "images": 0,
+    "audio": 0,
+    "video": 0,
+    "archives": 0,
+    "home_directory_size": "2.0 GB"
+  },
+  "data_sources_ingested": [
+    "module_01_chromeos_inventory",
+    "module_02_browser_data",
+    "module_03_research_files",
+    "module_04_android_data"
+  ]
+}

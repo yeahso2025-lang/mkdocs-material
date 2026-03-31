@@ -1,0 +1,56 @@
+{
+  "yeahso_network": true,
+  "mothership": true,
+  "knowledge_base": "francesca",
+  "manifest_type": "action_items",
+  "version": "1.0",
+  "generated": "2026-03-31T13:05:01Z",
+  "source_batch": "batch_20260331T130446Z",
+  "actions": [
+    {
+      "id": "ACT-001",
+      "priority": 1,
+      "category": "data_collection",
+      "title": "Re-run audit on physical Scout Chromebook",
+      "description": "Current audit ran in VM. Re-run all 4 stages on the actual Scout ChromeOS device for complete data.",
+      "status": "pending",
+      "assigned_to": "DGANY"
+    },
+    {
+      "id": "ACT-002",
+      "priority": 2,
+      "category": "data_collection",
+      "title": "Execute Google Takeout exports",
+      "description": "Export Gemini, NotebookLM, Chrome, Google Keep, and Google Drive data via Takeout as specified in takeout_checklist.json.",
+      "status": "pending",
+      "assigned_to": "DGANY"
+    },
+    {
+      "id": "ACT-003",
+      "priority": 3,
+      "category": "infrastructure",
+      "title": "Install sqlite3 in Crostini",
+      "description": "Required for browser history, passwords, autofill, and cookies extraction. Run: sudo apt install sqlite3",
+      "status": "pending",
+      "assigned_to": "DGANY"
+    },
+    {
+      "id": "ACT-004",
+      "priority": 4,
+      "category": "data_transfer",
+      "title": "Lifeboat USB transfer to Mothership",
+      "description": "Transfer scout_export archive to Mothership physical machine via USB. Verify checksums on arrival.",
+      "status": "pending",
+      "assigned_to": "DGANY"
+    },
+    {
+      "id": "ACT-005",
+      "priority": 5,
+      "category": "knowledge_base",
+      "title": "Francesca initial context load",
+      "description": "Load consolidated device profile into Francesca for baseline context. This enables personalized assistance.",
+      "status": "in_progress",
+      "assigned_to": "Francesca"
+    }
+  ]
+}
