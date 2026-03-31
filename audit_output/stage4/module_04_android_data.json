@@ -1,0 +1,46 @@
+{
+  "yeahso_network": true,
+  "scout_device": true,
+  "audit_module": "android_data",
+  "version": "1.0",
+  "timestamp": "2026-03-31T12:46:04Z",
+  "hostname": "vm",
+  "collection_method": "Bash audit script via Crostini",
+  "stage": "4 of 4",
+  "android_subsystem": {
+    "detected": false,
+    "adb_available": false,
+    "adb_connected": false,
+    "android_version": "unknown",
+    "sdk_version": "unknown",
+    "build_id": "unknown",
+    "security_patch": "unknown",
+    "device_model": "unknown"
+  },
+  "installed_apps": {
+    "user_count": 0,
+    "system_count": 0,
+    "total_count": 0,
+    "apps": []
+  },
+  "permissions": {
+    "total_granted_runtime": 0,
+    "app_permissions": []
+  },
+  "accounts": {
+    "count": 0,
+    "accounts": []
+  },
+  "storage": {
+    "internal_total": "unknown",
+    "internal_used": "unknown",
+    "internal_free": "unknown",
+    "volumes": [],
+    "play_files_count": 0,
+    "play_files_size": "0"
+  },
+  "services": {
+    "running_count": 0,
+    "services": []
+  }
+}

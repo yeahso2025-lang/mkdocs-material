@@ -1,0 +1,53 @@
+{
+  "yeahso_network": true,
+  "scout_device": true,
+  "audit_module": "browser_data",
+  "version": "1.0",
+  "timestamp": "2026-03-31T12:41:48Z",
+  "hostname": "vm",
+  "collection_method": "Bash audit script via Crostini",
+  "stage": "2 of 4",
+  "browser_profile": {
+    "browser": "unknown",
+    "profile_directory": "",
+    "profile_name": "unknown",
+    "profile_total_size": "0",
+    "sqlite3_available": false
+  },
+  "bookmarks": {
+    "count": 0,
+    "entries": []
+  },
+  "history": {
+    "total_entries": 0,
+    "date_range": "unknown",
+    "top_sites": []
+  },
+  "saved_passwords": {
+    "note": "Metadata only — no plaintext passwords extracted",
+    "credential_count": 0,
+    "domains_with_saved_passwords": []
+  },
+  "autofill": {
+    "total_entries": 0,
+    "saved_addresses": 0,
+    "saved_credit_cards": 0
+  },
+  "cookies": {
+    "total_cookies": 0,
+    "unique_domains": 0
+  },
+  "storage": {
+    "local_storage": "0",
+    "session_storage": "0",
+    "indexeddb": "0",
+    "cache": "0"
+  },
+  "preferences": {
+    "default_search_engine": "unknown",
+    "homepage": "unknown",
+    "sync_enabled": "unknown",
+    "safe_browsing": "unknown",
+    "do_not_track": "unknown"
+  }
+}
