@@ -34,6 +34,7 @@ export type ComponentType =
   | "iconsearch-query"                 /* Icon search input */
   | "iconsearch-result"                /* Icon search results */
   | "iconsearch-select"                /* Icon search select */
+  | "screensaver"                      /* Matrix screensaver */
   | "sponsorship"                      /* Sponsorship */
   | "sponsorship-count"                /* Sponsorship count */
   | "sponsorship-total"                /* Sponsorship total */
@@ -64,6 +65,7 @@ interface ComponentTypeMap {
   "iconsearch-query": HTMLInputElement /* Icon search input */
   "iconsearch-result": HTMLElement     /* Icon search results */
   "iconsearch-select": HTMLSelectElement
+  "screensaver": HTMLElement           /* Matrix screensaver */
   "sponsorship": HTMLElement           /* Sponsorship */
   "sponsorship-count": HTMLElement     /* Sponsorship count */
   "sponsorship-total": HTMLElement     /* Sponsorship total */

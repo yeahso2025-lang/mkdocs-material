@@ -50,6 +50,12 @@
   </a>
 {% endblock %}
 
+<!-- Matrix screensaver overlay -->
+{% block content %}
+  {{ super() }}
+  <div class="mdx-screensaver" data-mdx-component="screensaver"></div>
+{% endblock %}
+
 <!-- Theme-related JavaScript -->
 {% block scripts %}
   {{ super() }}
