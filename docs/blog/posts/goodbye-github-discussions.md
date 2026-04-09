@@ -5,6 +5,7 @@ authors:
   - alexvoss
   - katharinalisalin
   - pawamoy
+  - penguin2
 categories:
   - General
 icon: material/comment-off-outline

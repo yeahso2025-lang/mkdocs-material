@@ -1,6 +1,6 @@
 ---
 date: 2023-09-22
-authors: [squidfunk]
+authors: [squidfunk, penguin2]
 categories:
   - Build
   - Performance

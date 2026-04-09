@@ -1,6 +1,6 @@
 ---
 date: 2022-05-05
-authors: [squidfunk]
+authors: [squidfunk, penguin2]
 title: Chinese search support
 description: >
   Insiders adds Chinese language support for the built-in search plugin – a
