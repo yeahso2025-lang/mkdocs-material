@@ -264,4 +264,53 @@ No open PRs. No open issues. No stashes.
 
 ---
 
+## CONTEXT FROM CLAUDE CLI SESSION (observed by Claude Code Web)
+
+The user shared Claude CLI output showing work on a **completely separate project** — NOT mkdocs-material. Here's what Claude CLI is building:
+
+### Project: YeahSO OS — Satellite Architecture
+A multi-device, air-gapped package distribution system with cryptographic signing:
+
+- **Mothership** = the HP Chromebook (yeahso_os_mothership) — central hub
+- **Satellites** = other devices, first one is **HP Oracle** (appears to be a Windows machine with WSL2)
+- **Hermes** = a runtime that runs on satellites
+- **Felix Mercer** = a persona (YAML + prompt files)
+- **Lifeboat** = the USB-based physical ferry system for air-gapped transfers
+
+### Cryptographic Architecture
+- **ed25519 keypairs** for signing
+- Two Mothership keys generated:
+  - `mothership_dispatch_2026_q2` — signs briefs going OUT to satellites
+  - `mothership_package_builder_2026_q2` — signs satellite package MANIFESTs + SHA256SUMS
+- Keys registered in `active_pubkeys.yaml`
+- Private keys stored in `apps/security_department/keys_registry/mothership/private/`
+- Key generation tool: `python3 apps/lifeboat/sig_utils.py genkey`
+
+### First Package Built
+- **Package:** `yeahso_satellite_hp_oracle_v1.0.0.tar.zst` (34,608 bytes)
+- **SHA256:** `d44682b1a9ffe4539f735bb89fdcc9154c9d3d081dc1841ed15920b9c4a4cab6`
+- **Contents:** MANIFEST.yaml (signed), SHA256SUMS (18 files, all verified), Hermes runtime, Felix Mercer persona, envelope config, Lifeboat scripts, Mothership pubkeys, install scripts
+- **Signature verification:** VALID against registered pubkey
+- **Security checks:** 0 denylist hits, 0 credential-regex hits
+
+### Next Steps (as of this handoff)
+1. User needs to **physically ferry** the .tar.zst to HP Oracle via USB
+2. Run `install.sh` on HP Oracle (inside WSL2) — this will generate HP Oracle's own ed25519 keypair
+3. Bring HP Oracle's pubkey hex back to Mothership
+4. Add third entry to `active_pubkeys.yaml` with role `satellite_hp_oracle`
+5. Round-trip channel goes live for first brief
+
+### Key File Paths (on Chromebook, NOT in this repo)
+```
+apps/lifeboat/sig_utils.py              — key generation + signing tool
+apps/security_department/keys_registry/  — key storage
+active_pubkeys.yaml                     — public key registry
+scripts/build_satellite_package.py      — package builder
+/tmp/yeahso_packages/                   — built packages output
+```
+
+This project is on the user's Chromebook filesystem, NOT in the mkdocs-material GitHub repo. Claude Code Web cannot access or modify it — only Claude CLI can.
+
+---
+
 *End of handoff from Claude Code Web. Session `session_01Q43pUTbfyJfSjuKkx3Pnvx` on 2026-04-10.*
