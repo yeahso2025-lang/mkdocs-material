@@ -1,6 +1,6 @@
 ---
 date: 2021-12-27
-authors: [squidfunk]
+authors: [squidfunk, penguin2]
 description: >
   2021 was a fantastic year for this project as we shipped many new awesome
   features and made this project sustainable

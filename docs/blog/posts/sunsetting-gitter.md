@@ -1,6 +1,6 @@
 ---
 date: 2023-10-02
-authors: [squidfunk, alexvoss]
+authors: [squidfunk, alexvoss, penguin2]
 categories:
   - General
 ---

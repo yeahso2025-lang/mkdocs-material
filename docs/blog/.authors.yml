@@ -19,3 +19,7 @@ authors:
     description: Communications
     avatar: https://avatars.githubusercontent.com/u/105352741
     url: https://github.com/katharinalisalin
+  penguin2:
+    name: Penguin 2
+    description: Contributor
+    avatar: assets/images/penguin.svg

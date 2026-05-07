@@ -1,6 +1,6 @@
 ---
 date: 2021-09-13
-authors: [squidfunk]
+authors: [squidfunk, penguin2]
 readtime: 15
 description: >
   How we rebuilt client-side search, delivering a better user experience while
